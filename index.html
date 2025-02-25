@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Making A Game</title>
+    <title>Taş Kağıt Makas Oyunu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="container">
         <div class="result_field">
             <div class="result_images">
-                <span class="user_result">
-                     <img src="rock.png" alt="">
-               </span>
-               <span class="cpu_result">
-                <img src="rock.png " alt="">
-           </span>
+                <div class="player-side">
+                    <span class="player-label">SEN</span>
+                    <span class="user_result">
+                        <img src="rock.png" alt="rock">
+                    </span>
+                </div>
+                <div class="cpu-side">
+                    <span class="player-label">BİLGİSAYAR</span>
+                    <span class="cpu_result">
+                        <img src="rock.png" alt="rock">
+                    </span>
+                </div>
             </div>
-            <div class="result">Let's Play!</div>
+            <div class="result">Hadi Oyna!</div>
         </div>
         <div class="option_container">
              <div class="option_item">
                 <img src="rock.png" alt="rock"> 
-                <p>Rock!</p>
+                <p>Taş!</p>
              </div>
              <div class="option_item">
                 <img src="paper.png" alt="paper"> 
-                <p>Paper!</p>
+                <p>Kağıt!</p>
              </div>
              <div class="option_item">
                 <img src="scissors.png" alt="scissors"> 
-                <p>Scissors!</p>
+                <p>Makas!</p>
              </div>
         </div>
     </section>
+  <script src="app.js"></script>
 </body>
 </html>

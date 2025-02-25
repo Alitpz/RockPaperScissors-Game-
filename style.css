@@ -34,7 +34,24 @@ body {
     display: flex;
     column-gap: 7rem;
     margin-bottom: 2rem;
-} 
+}
+
+.player-side, .cpu-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.player-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4a47a3;
+    background: rgba(74, 71, 163, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
 
 .result_images img {
     width: 120px;
@@ -42,12 +59,34 @@ body {
     transition: transform 0.3s ease;
 }
 
+@keyframes userShake {
+    0% { transform: rotate(90deg) translateX(0); }
+    50% { transform: rotate(90deg) translateX(-20px); }
+    100% { transform: rotate(90deg) translateX(0); }
+}
+
+@keyframes cpuShake {
+    0% { transform: rotate(-90deg) rotateY(180deg) translateX(0); }
+    50% { transform: rotate(-90deg) rotateY(180deg) translateX(20px); }
+    100% { transform: rotate(-90deg) rotateY(180deg) translateX(0); }
+}
+
 .user_result img {
     transform: rotate(90deg);
+    transition: transform 0.3s ease;
 }
 
 .cpu_result img {
     transform: rotate(-90deg) rotateY(180deg);
+    transition: transform 0.3s ease;
+}
+
+.shake-animation .user_result img {
+    animation: userShake 0.8s cubic-bezier(0.36, 0, 0.66, -0.56) 3;
+}
+
+.shake-animation .cpu_result img {
+    animation: cpuShake 0.8s cubic-bezier(0.36, 0, 0.66, -0.56) 3;
 }
 
 .result {
