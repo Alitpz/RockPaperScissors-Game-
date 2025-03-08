@@ -42,14 +42,4 @@ To run the project locally:
 2. Navigate to the downloaded folder
 3. Open the `index.html` file in a web browser
 
-## Contributing
 
-1. Fork this repository
-2. Create a feature branch (`git checkout -b new-feature`)
-3. Commit your changes (`git commit -m 'Added new feature'`)
-4. Push your branch (`git push origin new-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
